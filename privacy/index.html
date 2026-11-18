@@ -21,7 +21,7 @@
 
   <main id="main">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated 17 November 2026</p>
+    <p class="meta">Last updated 18 November 2026</p>
 
     <div class="card">
       <h2>The short version</h2>
@@ -111,8 +111,12 @@
     <h3>Crash reports</h3>
     <p>When the app crashes or hits an error, it sends a report to Sentry: what went wrong in the code, the device model, iOS and app version, and an anonymous install identifier. Reports never include screenshots, your photos, your account details or what you typed.</p>
 
-    <h3>Later: approximate location and daily outfits</h3>
-    <p>A future version will suggest a daily outfit for the weather. If you choose to share your location then, we'll store only an approximate position, rounded to about 11 km (0.1 degrees), and use it only to get the weather: our server sends that approximate position and the date to Apple's WeatherKit service to get the day's forecast, with no account details or photos. Daily outfits will also store the outfits we suggest, your reactions to them and a notification token. We'll update this policy before any of this ships.</p>
+    <h3>Approximate location (only if you turn it on)</h3>
+    <p>Location is off until you turn it on, from the Today screen or in Settings › Weather; the app asks iOS for permission only then, and only while you're using the app. We take an approximate location from your phone (never your precise location), round it on your phone to about 11 km (0.1 degrees), and store only that rounded position with your account. We use it only to get the weather for your daily outfits: our server sends that approximate position and the date to Apple's WeatherKit service, with no account details or photos. While location is on, the app checks it at most once a day when you open it, and saves a new position only if you've moved more than about 10 km. It never tracks you in the background.</p>
+    <p>You can turn location off at any time in Settings › Weather, which deletes the stored position straight away. If you take away Wearmood's location permission in iOS Settings, we delete it the next time you open the app.</p>
+
+    <h3>Later: daily outfits</h3>
+    <p>A future version will suggest daily outfits from your wardrobe. They will also store the outfits we suggest, your reactions to them and a notification token. We'll update this policy before that ships.</p>
 
     <h3>What we don't collect</h3>
     <p>We don't collect your date of birth, contacts, precise location, advertising identifier, browsing history or payment card details. In-app purchases, when offered, are handled by Apple; we only receive the state of your subscription.</p>
@@ -127,6 +131,7 @@
           <tr><td data-label="Purpose">Run your account and show your wardrobe</td><td data-label="Data">Account, profile, photos, item details</td><td data-label="Legal basis">Performing our contract with you</td></tr>
           <tr><td data-label="Purpose">Tag photos and make enhanced photos with AI</td><td data-label="Data">Photos (cleaned-up version), item details</td><td data-label="Legal basis">Your consent (the AI screen), which you can withdraw in Settings</td></tr>
           <tr><td data-label="Purpose">Check you're an adult</td><td data-label="Data">Age range</td><td data-label="Legal basis">Legitimate interests and legal obligations (keeping the service adults-only)</td></tr>
+          <tr><td data-label="Purpose">Pick outfits for your local weather</td><td data-label="Data">Approximate location (about 11 km), only if you turn it on</td><td data-label="Legal basis">Your consent (turning location on), which you can withdraw in Settings › Weather</td></tr>
           <tr><td data-label="Purpose">Apply plan limits, prevent abuse, control costs</td><td data-label="Data">Usage counts, AI request records</td><td data-label="Legal basis">Contract and legitimate interests</td></tr>
           <tr><td data-label="Purpose">Send account emails (verification, password reset)</td><td data-label="Data">Email address</td><td data-label="Legal basis">Contract</td></tr>
           <tr><td data-label="Purpose">Understand which features are used and fix crashes</td><td data-label="Data">Anonymous analytics, crash reports</td><td data-label="Legal basis">Legitimate interests in a working, improving app</td></tr>
@@ -165,7 +170,7 @@
           <tr><td data-label="Provider">TelemetryDeck (Germany)</td><td data-label="What it does">Anonymous app analytics</td><td data-label="Data">Anonymous events, device type, app and iOS version</td></tr>
           <tr><td data-label="Provider">Sentry (United States)</td><td data-label="What it does">Crash and error reports</td><td data-label="Data">Crash details, device model, app and iOS version, anonymous install ID</td></tr>
           <tr><td data-label="Provider">Apple</td><td data-label="What it does">Sign in with Apple; app distribution through the App Store and TestFlight; in-app purchases when offered</td><td data-label="Data">Apple account identifier, email or relay address, subscription state</td></tr>
-          <tr><td data-label="Provider">Apple WeatherKit</td><td data-label="What it does">The day's weather forecast for outfit suggestions, only if you share your location (later version)</td><td data-label="Data">Approximate location (rounded to about 11 km) and the date; no account details</td></tr>
+          <tr><td data-label="Provider">Apple WeatherKit</td><td data-label="What it does">The day's weather forecast for outfit suggestions, only if you turn on location</td><td data-label="Data">Approximate location (rounded to about 11 km) and the date; no account details</td></tr>
           <tr><td data-label="Provider">Google Sign-In</td><td data-label="What it does">Sign in with Google</td><td data-label="Data">Google account identifier, email address</td></tr>
         </tbody>
       </table>
@@ -185,6 +190,7 @@
       <li><strong>An item you delete:</strong> its details and every version of its photo (original, cutout, cleaned-up, enhanced, Retry results and thumbnails) are deleted straight away. Archived items are kept until you delete them.</li>
       <li><strong>Photos for an item you never saved:</strong> files uploaded for an Enhance on the review screen, or left by an interrupted upload, are deleted automatically within about two days.</li>
       <li><strong>Retry results you didn't choose:</strong> deleted after 24 hours.</li>
+      <li><strong>Your approximate location:</strong> until you turn location off in Settings › Weather (deleted straight away), take away Wearmood's location permission in iOS (deleted the next time you open the app) or delete your account.</li>
       <li><strong>AI request records:</strong> kept with your account; when you delete your account they're kept only as anonymous cost records (see below).</li>
       <li><strong>Crash reports:</strong> kept by Sentry for up to 90 days.</li>
       <li><strong>Anonymous analytics:</strong> kept by TelemetryDeck as anonymous statistics; they can't be linked to you.</li>
@@ -193,7 +199,7 @@
     <h2 id="deletion">8. Deleting your account</h2>
     <p>Open Settings › Account › Delete account, confirm it's you (with Apple, Google or your password) and type DELETE. This happens immediately, in the same request:</p>
     <ul>
-      <li>Deleted: your wardrobe items and every photo version, tags, names and brands, your profile (username, gender, time zone), your age range, your AI choice, your usage counts and your sign-in account.</li>
+      <li>Deleted: your wardrobe items and every photo version, tags, names and brands, your profile (username, gender, time zone, approximate location), your age range, your AI choice, your usage counts and your sign-in account.</li>
       <li>If you signed in with Apple, we revoke Wearmood's access to your Apple account. If you used Google, you can also remove Wearmood from your Google Account's third-party connections.</li>
       <li>A file still being written when you deleted your account is removed by our nightly cleanup within about 24 hours. Photos already sent in an Enhance all batch are deleted from OpenAI when that batch ends, within about 49 hours.</li>
       <li>We keep anonymous cost records (feature, provider, size, cost, status and time), with no link to you, for our accounts.</li>
@@ -227,7 +233,7 @@
     <p>wearmood.app uses no cookies, analytics or trackers. Our web host processes visitors' IP addresses to deliver the pages and keep them secure.</p>
 
     <h2 id="changes">14. Changes</h2>
-    <p>We'll update this policy when the app changes, for example before daily outfits, location or subscriptions ship, and change the date at the top. If a change matters, we'll tell you in the app before it applies.</p>
+    <p>We'll update this policy when the app changes, for example before daily outfits or subscriptions ship, and change the date at the top. If a change matters, we'll tell you in the app before it applies.</p>
 
     <h2 id="contact">15. Contact</h2>
     <p>Questions or requests: <a href="mailto:support@wearmood.app">support@wearmood.app</a><br>
