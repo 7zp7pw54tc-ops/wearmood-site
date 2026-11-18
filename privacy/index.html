@@ -112,7 +112,7 @@
     <p>When the app crashes or hits an error, it sends a report to Sentry: what went wrong in the code, the device model, iOS and app version, and an anonymous install identifier. Reports never include screenshots, your photos, your account details or what you typed.</p>
 
     <h3>Later: approximate location and daily outfits</h3>
-    <p>A future version will suggest a daily outfit for the weather. If you choose to share your location then, we'll store only an approximate position, rounded to about 11 km (0.1 degrees), and use it only to get the weather. Daily outfits will also store the outfits we suggest, your reactions to them and a notification token. We'll update this policy before any of this ships.</p>
+    <p>A future version will suggest a daily outfit for the weather. If you choose to share your location then, we'll store only an approximate position, rounded to about 11 km (0.1 degrees), and use it only to get the weather: our server sends that approximate position and the date to Apple's WeatherKit service to get the day's forecast, with no account details or photos. Daily outfits will also store the outfits we suggest, your reactions to them and a notification token. We'll update this policy before any of this ships.</p>
 
     <h3>What we don't collect</h3>
     <p>We don't collect your date of birth, contacts, precise location, advertising identifier, browsing history or payment card details. In-app purchases, when offered, are handled by Apple; we only receive the state of your subscription.</p>
@@ -165,6 +165,7 @@
           <tr><td data-label="Provider">TelemetryDeck (Germany)</td><td data-label="What it does">Anonymous app analytics</td><td data-label="Data">Anonymous events, device type, app and iOS version</td></tr>
           <tr><td data-label="Provider">Sentry (United States)</td><td data-label="What it does">Crash and error reports</td><td data-label="Data">Crash details, device model, app and iOS version, anonymous install ID</td></tr>
           <tr><td data-label="Provider">Apple</td><td data-label="What it does">Sign in with Apple; app distribution through the App Store and TestFlight; in-app purchases when offered</td><td data-label="Data">Apple account identifier, email or relay address, subscription state</td></tr>
+          <tr><td data-label="Provider">Apple WeatherKit</td><td data-label="What it does">The day's weather forecast for outfit suggestions, only if you share your location (later version)</td><td data-label="Data">Approximate location (rounded to about 11 km) and the date; no account details</td></tr>
           <tr><td data-label="Provider">Google Sign-In</td><td data-label="What it does">Sign in with Google</td><td data-label="Data">Google account identifier, email address</td></tr>
         </tbody>
       </table>
